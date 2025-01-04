@@ -1,0 +1,7 @@
+
+    train: C:\Users\salih\Desktop\Face_Mask_Detection_using_YOLOv8m\output\images\train
+    val: C:\Users\salih\Desktop\Face_Mask_Detection_using_YOLOv8m\output\images\val
+
+    nc: 3
+    names: ['mask_weared_incorrect', 'with_mask', 'without_mask']
+    
