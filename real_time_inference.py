@@ -2,9 +2,8 @@ import cv2
 from ultralytics import YOLO
 
 def main():
-    model_path = 'C:\\Users\\salih\\Desktop\\Face_Mask_Detection_using_YOLOv8m\\runs\\detect\\train5\\weights\\best.pt'
+    model_path = "runs/detect/train5/weights/best.pt"    
     model = YOLO(model_path)
-
     cap = cv2.VideoCapture(0)  
 
     if not cap.isOpened():
