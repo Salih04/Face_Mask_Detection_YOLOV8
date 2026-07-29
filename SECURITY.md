@@ -22,12 +22,14 @@ An unknown W&B credential was discovered in the public repository and its Git
 history. Salih does not have a W&B account. The credential owner and validity
 are unknown.
 
-The credential was removed from this isolated corrected tree without being
-displayed, tested, used, authenticated, submitted to a service, or attributed
-to an account.
+On 2026-07-29, the credential was removed from the current public tree and the
+reachable `main` history without being displayed, tested, used, authenticated,
+submitted to a service, or attributed to an account. W&B Security was notified
+without the credential value. A separate, unused W&B GitHub OAuth authorization
+was revoked.
 
-This isolated correction does not contain the live public repository. Provider
-revocation is not confirmed. Historical removal is not complete on GitHub until
-the rewritten branches and tags are published and GitHub Support completes any
-required pull-request-reference, cached-view, garbage-collection, and LFS
-cleanup.
+Provider revocation of the unknown credential is not yet confirmed. Historical
+removal is not complete until GitHub Support finishes cached-view, hosted-
+reference, and server-side garbage-collection cleanup. Copies outside GitHub's
+control, including pre-existing clones, cannot be recalled by this repository
+rewrite.
