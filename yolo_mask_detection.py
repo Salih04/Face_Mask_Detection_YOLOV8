@@ -7,13 +7,9 @@ import torch
 import matplotlib.pyplot as plt
 import cv2
 from sklearn.preprocessing import LabelEncoder
-import wandb
 from ultralytics import YOLO
 
 def main():
-    # Log in to wandb with API key
-    # W&B authentication must be supplied through secure environment configuration when required.
-
     ANNOTATIONS_DIR = "C:\\Users\\salih\\Desktop\\Face_Mask_Detection_using_YOLOv8m\\annotations"
     IMAGES_DIR = "C:\\Users\\salih\\Desktop\\Face_Mask_Detection_using_YOLOv8m\\images"
     OUTPUT_DIR = "C:\\Users\\salih\\Desktop\\Face_Mask_Detection_using_YOLOv8m\\output"

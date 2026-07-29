@@ -31,7 +31,7 @@ Real-time face mask detection with YOLOv8. Detects three classes: **with mask**,
 pip install -r requirements.txt
 ```
 
-**Requirements:** Python 3.8+, PyTorch, Ultralytics, OpenCV, TensorFlow, W&B
+**Requirements:** Python 3.8+, PyTorch, Ultralytics, OpenCV, TensorFlow
 
 ## Usage
 
@@ -48,7 +48,6 @@ This will:
 - Convert bounding boxes to YOLO format
 - Split 80/20 train/val
 - Train YOLOv8n for 80 epochs (imgsz=416, batch=16)
-- Log metrics to Weights & Biases
 
 ### 2. Real-time webcam inference
 
@@ -91,4 +90,12 @@ Pascal VOC format XML annotations with three mask-related labels. Images are spl
 
 ## Monitoring
 
-Training metrics logged to [Weights & Biases](https://wandb.ai). Set your own API key in `yolo_mask_detection.py` before running.
+The current training script does not require or initialize Weights & Biases.
+
+If W&B integration is legitimately added later, credentials must never be
+committed. Authentication must use secure environment configuration such as
+`WANDB_API_KEY`, and non-networked development should use a supported
+`WANDB_MODE` such as `disabled` or `offline`.
+
+See [SECURITY.md](SECURITY.md) for the credential-handling policy and incident
+status.

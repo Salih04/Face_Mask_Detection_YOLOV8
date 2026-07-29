@@ -35,7 +35,9 @@ ANN / CNN / MobileNetV2 baselines in `ann_cnn_transfer_learning.py` serve as aca
 
 ## Experiment Tracking
 
-W&B (`wandb`) logs training metrics. API key currently hardcoded in `yolo_mask_detection.py` — must be replaced with own key before running.
+The current training script does not initialize W&B. If experiment tracking is
+added later, credentials must be supplied through secure environment
+configuration and must never be committed.
 
 ## Environment
 

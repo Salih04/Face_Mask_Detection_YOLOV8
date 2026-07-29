@@ -2,9 +2,13 @@
 
 ## [Unreleased]
 
+### Security
+- Removed an unknown hard-coded W&B credential without testing or using it.
+- Removed the unused W&B import and direct dependency.
+- Added credential-handling guidance in `SECURITY.md`.
+
 ### Known Fixes Needed
 - Cross-platform paths (hardcoded Windows `C:\Users\salih\...`)
-- W&B API key should move to env var
 - `data.yaml` written as single line (invalid YAML)
 - `real_time_inference.py` model path points to `train5`, not `train8`
 
